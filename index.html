@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <div class="welcome">
+            <a class="logo"></a>
+
+            <div class="container">
+                <div class="row">
+                    <h1>Let's learn about <strong>position.</strong></h1>
+                    <p>With our hosts <strong>Jake</strong> & <strong>Finn</strong>.</p>
+                </div>
+
+                <div class="row">
+                    <img class="jake_finn_image" src="img/jake_finn.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="container clearfix">
+                <div class="row">
+                    <div class="column col-1">
+                        <img src ="img/gear_icon.png" />
+                    </div>
+
+                    <div class="column col-11">
+                        <p><span class="sub-title">What is <strong>positioning</strong>?</span></p>
+                        <p>The position property allows you to position elements on a page. You can position elements by using the top, right, bottom, and left properties. These properties react differently depending on the type of position you use, as well as the combination in which you use them.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="child-parent-container">
+            <div class="container clearfix">
+                <div class="row clearfix">
+                    <div class="column col-4">
+                        <img src="img/finn.png" />
+                    </div>
+
+                    <div class="column col-8">
+                        <h2><strong>Parent</strong> Element</h2>
+                        <span class="character-name">Played by Finn</span>
+                        <p>A parent element is an element that contains one or more child elements.</p>
+                    </div>
+                </div>
+
+                <div class="row jake-container clearfix">
+                    <div class="column float-switch col-4">
+                        <img src="img/jake.png" />
+                    </div>
+
+                    <div class="column col-8">
+                        <h2><strong>Child</strong> Element</h2>
+                        <span class="character-name">Played by Jake</span>
+                        <p>All elements that are contained within a parent element are considered child elements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="property-info-container">
+            <div class="container">
+                <div class="row">
+                    <h2><strong>Position</strong> Properties</h2>
+                </div>
+
+                <div class="row property-definition clearfix">
+                    <div class="column col-3">
+                        <p><strong>Static Position</strong> is the default position. It shows up according to the normal flow of the page. You typically do not declare this property.</p>
+                    </div>
+
+                    <div class="column col-3">
+                        <p><strong>Absolute Position</strong> is position relative to to it's parent element. If it does not have a parent element it defaults to the <HTML> block.</p>
+                    </div>
+
+                    <div class="column col-3">
+                        <p><strong>Relative Position</strong> is positioned according to the normal flow of the page. It can be positioned using the top, right, bottom, and left properties.</p>
+                    </div>
+
+                    <div class="column col-3">
+                        <p><strong>Fixed Position</strong> is positioned relative to your browser window. Scrolling does not move it from its position.
+                    </div>
+                </div>
+
+                <div class="row property-demo clearfix">
+                    <div class="column col-4">
+                        <div class="row">
+                            <div class="parent static">
+                                <div class="child"></div>
+                            </div>                            
+                        </div>
+
+                        <div class="row">
+                            <p><strong>Static + Static</strong>: Normally you would not declare a static property. The above illustration demonstrate the behaviour of a parent and child's element whose position is both set to static.</p>
+                        </div>
+                    </div>
+
+                    <div class="column col-4">
+                        <div class="row">
+                            <div class="parent relative">
+                                <div class="child absolute"></div>
+                            </div>                            
+                        </div>
+
+                        <div class="row">
+                            <p><strong>Relative + Absolute</strong>: When a parent element is set to relative and contains an absolute positioned child, we can use the top, right, bottom, and left properties to manipulate the child element within the bounds of the parent element easily.</p>
+                        </div>
+                    </div>
+
+                    <div class="column col-4">
+                        <div class="row">
+                             <div class="parent-container">
+                                <img class="finn" src="img/finn.png" />
+                                <img class="jake" src="img/jake.png" />
+                            </div>                         
+                        </div>
+
+                        <div class="row">
+                            <p><strong>Z-Index</strong>: If you look at the previous illustrations Jake is standing in front of Finn. With the z-index property we can move elements forward or backwards on a virtual plane. In this instance with moved Jake behind Find by setting Finn's z-index property higher than Jake's.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>

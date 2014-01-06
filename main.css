@@ -1,0 +1,307 @@
+body {
+	color: #222;
+	font: normal 100% Arial;
+}
+
+h1 {
+	color: #333;
+	font: normal 4.5em "Helvetica Neue";
+	font-weight: 100;
+}
+
+h2 {
+	color: #333;
+	font: normal 3.75em "Helvetica Neue";
+	font-weight: 100;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 960px;
+	width: 90%;
+}
+
+.row { clear: both; }
+
+.column { 
+	float: left;
+	margin: 0 0 0 2.127659574%;
+}
+
+.column:first-child {
+	margin: 0;
+}
+
+.col-1 {
+	width: 6.25%;
+}
+
+.col-3 {
+	width: 22.916666666%;
+}
+
+.col-4 {
+	width: 31.25%;
+}
+
+.col-8 {
+	width: 64.583333333%;
+}
+
+.col-11 {
+	width: 89.5833333333%;
+}
+
+.welcome {
+	background: #eee;
+	overflow: hidden;
+	padding: 0 0 0 0;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+.logo {
+	background: url('img/logo.png') no-repeat;
+	display: block;
+	height: 100%;
+	position: fixed;
+		left: 4.1%;
+		top: 4.1%;
+	width: 100%;
+}
+
+.welcome h1 {
+	margin: 9.6% 0 0;
+}
+
+.welcome p {
+	color: #ff264a;
+	font-size: 1.125em;
+	margin: 2.083333333% 0 0 0;
+}
+
+.jake_finn_image {
+	margin: 0 auto;
+	max-width: 544px;
+	vertical-align: bottom;
+	width: 98%;
+}
+
+.info {
+	background: #2d2f32;
+	padding: 2.083333333% 0 3.125%;
+	width: 100%;
+}
+
+.sub-title {
+	font-size: 1.5em;
+}
+
+.info p {
+	color: #fff;
+	font-family: "Helvetica Neue";
+	font-size: 1.125em;
+	font-weight: 100;
+	letter-spacing: 1px;
+}
+
+.child-parent-container {
+	background: url('img/wood_grain.jpg') repeat;
+	padding: 2.083333333% 0 6.25%;
+	width: 100%;
+}
+
+.child-parent-container .col-4 { text-align: center; }
+
+.character-name { 
+	color: #ff264a;
+	font: normal 3.75em "Helvetica Neue";
+	font-size: 1.5em;
+	font-weight: 100;
+}
+
+.child-parent-container p {
+	font-family: "Helvetica Neue";
+	font-size: 1.125em;
+	font-weight: 200;
+	letter-spacing: 1px;
+	margin: 2.083333333% 0 0 0;
+}
+
+.jake-container {
+	margin: 6.25% 0 0 0;
+}
+
+.property-info-container {
+	background: #fff;
+	padding: 2.083333333% 0 6.25%;
+	width: 100%;
+}
+
+.property-info-container h2 {
+	margin: 0 0 3.125%;
+	text-align: center;
+}
+
+.property-info-container p {
+	font: normal 1.125em "Helvetica Neue";
+	font-weight: 200;
+	text-align: justify;
+}
+
+.property-demo {
+	margin: 6.25% 0 0 0;
+}
+
+.property-demo p {
+	font: normal 1.125em "Helvetica Neue";
+	font-weight: 200;
+	text-align: left !important;
+}
+
+.finn {
+	position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+}
+
+.jake {
+	position: absolute;
+		bottom: 0;
+		left: 30px;
+}
+
+.property-demo .col-4 {
+	background: #eee;
+	border-radius: 5px;
+	padding: 3.125% 2.083333333%;
+
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+
+	-moz-box-shadow:    1px 2px 3px 0 #bbb;
+  -webkit-box-shadow: 1px 2px 3px 0 #bbb;
+  box-shadow:         1px 2px 3px 0 #bbb;
+}
+
+.parent {
+	background: url('img/finn.png') no-repeat;
+	border: 5px dashed #ccc;
+	height: 221px;
+	margin: 0 auto 3.125%;
+	width: 141px;	
+}
+
+.parent-container {
+	border: 5px dashed #ccc;
+	height: 221px;
+	margin: 0 auto 3.125%;
+	position: relative;
+	width: 141px;
+}
+
+.relative {
+	position: relative;
+}
+
+.static {
+	position: static;
+}
+
+.child {
+	background: url('img/jake.png') no-repeat;
+	height: 131px;
+	width: 80px;
+}
+
+.absolute {
+	position: absolute;
+		bottom: 0;
+		right: 0;
+}
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+	.info .column {
+		float: none;
+		margin: 0;
+	}
+
+	.info .column  { 
+		width: 100%; 
+		text-align: center;
+	}
+
+	.info .col-11 {
+		margin: 2.083333333% 0 0 0;
+	}
+}
+
+.float-switch {
+	float: right;
+}
+
+@media screen and (max-width: 800px) {
+	.property-definition .column {
+		float: none;
+		margin: 3.125% 0 0 0;
+	}
+
+	.col-3 {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.child-parent-container .column {
+		width: 100%;
+	}
+
+	.child-parent-container .col-8{
+		float: right;
+		width: 100%;
+	}
+
+	.child-parent-container .col-4 {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.property-demo .column {
+		float: none;
+		margin: 3.125% 0;
+	}
+
+	.property-demo .col-4 {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 3.5em;
+	}
+
+	h2 {
+		font-size: 2.5em;
+	}
+
+	.info {
+		padding: 5.083333333% 0 5.125%;
+	}
+}
